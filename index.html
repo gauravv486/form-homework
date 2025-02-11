@@ -6,12 +6,17 @@
     <title>Form-Homework</title>
 </head>
 <body>
-        <table border="1" height="300px" width="500px">
+        <!-- <table border="1"  height="300px" width="500px">
                 <tr>
                     <th colspan="2" align="center">Registration Form</th>
                 </tr>
                 <tr>
-                    <td align="center">Name:</td>
+                    <td align="center">First Name:</td>
+                    <td align="center"><input type="text" placeholder="Enter your name"></td>
+                    
+                </tr>
+                <tr>
+                    <td align="center">Last Name:</td>
                     <td align="center"><input type="text" placeholder="Enter your name"></td>
                 </tr>
                 <tr>
@@ -28,7 +33,7 @@
                 </tr>
                 <tr>
                     <td align="center">Select Course:</td>
-                    <td>
+                    <td align="center">
                         <label for="course">Web-D</label>
                         <input type="radio" name="course" id="course">
                         <label for="course">DSA</label>
@@ -41,6 +46,50 @@
                         <input type="reset" name="reset" id="reset">
                     </td>
                 </tr>
-        </table>
+        </table> -->
+
+        <form action="">
+            <p>Registration Form </p> 
+            <fieldset>
+                <legend>Personal Details</legend>
+                <table>
+                    <tr>
+                        <td align="center">First Name:</td>
+                        <td align="center"><input type="text" placeholder="Enter your name" required></td>
+                        
+                    </tr>
+                    <tr>
+                        <td align="center">Last Name:</td>
+                        <td align="center"><input type="text" placeholder="Enter your name"></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Contact info</legend>
+                <table>
+                    <tr>
+                        <td align="center">Email:</td>
+                        <td align="center"><input type="email" placeholder="xyz@gmail.com"></td>
+                    </tr>
+                    <tr>
+                        <td align="center">Number:</td>
+                        <td align="center"><input type="number" placeholder="Contact no."></td>
+                    </tr>
+                </table>
+            </fieldset><br>
+
+            <label for="pic">Upload your Profile Photo:-</label>
+            <input type="file" name="picture" id="pic"><br><br>
+            <label>Select Cousre:</label>
+            <label for="course">Web-D</label>
+            <input type="radio" name="course" id="course">
+            <label for="course">DSA</label>
+            <input type="radio" name="course" id="course">
+            <br><br>
+            <input type="submit" name="submit" id="submit">
+            <input type="reset" name="reset" id="reset">
+        </form>
+
 </body>
 </html>
